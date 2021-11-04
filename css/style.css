@@ -1,0 +1,137 @@
+body {
+
+    /*background:url(../images/image1.jpeg);
+    background-size: cover;*/
+    background-color: blanchedalmond;
+
+   
+    font-family: 'Dancing Script', cursive;
+    font-size: 22px;
+  
+  }
+  
+  
+  .container  {
+  
+    position: absolute;
+  
+    left: 50%;
+  
+    top: 50%;
+  
+    transform: translate(-50%, -50%);
+  
+    height: 400px;
+  
+    width: 600px;
+
+     background:url(../images/image9.jpeg);
+     
+    background-size: cover;
+  
+  color:rgb(240, 194, 70);
+  
+    overflow: hidden;
+  
+    border-radius: 20px;
+  
+    cursor: pointer;
+  
+    box-shadow: 0 0 10px 4px #d0d0d0;
+  
+  }
+  
+  
+  
+  .content {
+  
+    position: absolute;
+  
+    top: 40%;
+  
+    transform: translatey(-65%);
+    
+    text-align: center;
+  
+    /*text-align: justify;*/
+  
+    padding: 40px;
+  
+    
+  
+  }
+  
+  h1 {
+  
+    font-weight: 900;
+  
+    text-align: center;
+  
+  }
+  
+  h3 {
+  
+    font-weight: 500;
+  
+    font-size: 25;
+  
+  }
+  
+  .flap::before {
+  
+    position: absolute;
+  
+    content: "";
+  
+    height: 100%;
+  
+    width: 50%;
+  
+    background: url("https://th.bing.com/th/id/OIP.zQdnMvmT8j0R-obdvhL1ywHaFP?pid=ImgDet&rs=1") white;
+  
+    background-position: 130px;
+    
+  
+    background-repeat: no-repeat;
+  
+    transition: 1.5s;
+  
+  }
+  
+  .flap::after {
+  
+    position: absolute;
+  
+    content: "";
+  
+    height: 100%;
+  
+    width: 50%;
+  
+    right: 0;
+  
+    background: url("https://th.bing.com/th/id/OIP.zQdnMvmT8j0R-obdvhL1ywHaFP?pid=ImgDet&rs=1") white;
+  
+   background-position: -170px;
+  
+    background-repeat: no-repeat;
+  
+    transition: 1.5s;
+  
+  }
+  
+  .container:hover .flap::after {
+  
+    transform: translatex(300px);
+   
+  
+  }
+  
+  .container:hover .flap::before{
+  
+    transform: translatex(-300px);
+  
+  
+  }
+
+  
